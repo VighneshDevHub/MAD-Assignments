@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content"
+        android:hint="Username" />
+
+    <CheckBox
+        android:id="@+id/notificationsCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Notifications" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Font Size" />
+
+    <SeekBar
+        android:id="@+id/fontSizeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:progress="14" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#09EDE6"
+        android:text="Save Preferences"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+</LinearLayout>
+
+
+
+
+
