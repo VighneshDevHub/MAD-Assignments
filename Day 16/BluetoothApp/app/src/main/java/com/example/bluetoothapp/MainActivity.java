@@ -74,7 +74,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (bluetoothAdapter.isEnabled()) {
                     bluetoothAdapter.disable();
+                    updateBluetoothStatusText();
+                    updateImage();
                     Toast.makeText(MainActivity.this, "Bluetooth turned OFF", Toast.LENGTH_SHORT).show();
+
                 } else {
                     Toast.makeText(MainActivity.this, "Bluetooth is already OFF", Toast.LENGTH_SHORT).show();
                 }
