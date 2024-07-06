@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         tv_BtStatus = findViewById(R.id.tv_BtStatus);
 
         pairedDevicesList = new ArrayList<>();
-        pairedDevicesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, pairedDevicesList);
+        pairedDevicesAdapter = new ArrayAdapter<>(this,R.layout.list_items, pairedDevicesList);
         lvPairedDevices.setAdapter(pairedDevicesAdapter);
 
         updateBluetoothStatusText();
