@@ -6,6 +6,21 @@
     android:theme="@style/AppTheme"
     tools:context=".SecondActivity">
 
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lavender"
+        android:logo="@drawable/whatsapp_2"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:title="WhatsApp"
+        android:titleMarginStart="20dp"
+        android:titleTextColor="#03FF10"
+
+
+        />
+
     <Button
         android:id="@+id/customButton"
         android:layout_width="wrap_content"
@@ -18,7 +33,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="nsdjjs"
+        android:text="This is Custom Button"
+        android:layout_margin="30dp"
+        style="@style/CustomTextViewStyle"
         android:layout_above="@id/customButton"
         android:layout_centerInParent="true"
         />
