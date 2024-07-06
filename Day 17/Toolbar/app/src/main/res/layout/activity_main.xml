@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lavender"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:logo="@drawable/whatsapp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:outlineSpotShadowColor="@color/black"
+        app:title="Whatsapp"
+        app:titleTextColor="#0BFA3E"
+        app:subtitle="Messenger App"
+        app:subtitleTextColor="@color/black"
+        app:titleTextAppearance="@style/ToolbarTitleStyle"
+        app:titleMarginStart="30dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Chat"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

@@ -1,11 +1,16 @@
 package com.example.styleanimation;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SecondActivity  extends AppCompatActivity {
@@ -17,6 +22,8 @@ public class SecondActivity  extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_second);
 
+//        Toolbar toolbar =findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
 
         customButton = findViewById(R.id.customButton);
 
@@ -24,8 +31,26 @@ public class SecondActivity  extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(SecondActivity.this, "Clicked!", Toast.LENGTH_SHORT).show();
+
+                Intent i = new Intent(SecondActivity.this, ThirdActivity.class);
+                startActivity(i);
             }
         });
 
     }
+//
+//    @Override
+//    public boolean onCreateOptionMenu(Menu menu){
+//        getMenuInflater().inflate(R.menu.toolbar_menu,menu);
+//        return true;
+//
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item){
+//        int id = item.getItemId();
+//        if(id == R.id.group){
+//
+//        }
+//    }
 }

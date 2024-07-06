@@ -8,6 +8,15 @@
     <style name="Theme.StyleAnimation" parent="Base.Theme.StyleAnimation" />
 
 
+
+    <style name="AppTheme1" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorControlActivated">@color/checked_color</item>
+        <item name="colorControlNormal">@color/unchecked_color</item>
+        <item name="colorControlHighlight">@color/border_color</item>
+    </style>
+
+
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/lavender</item>
         <item name="colorPrimaryVariant">@color/lavender</item>
@@ -16,11 +25,4 @@
         <item name="android:textColor">#000000</item>
         <item name="android:buttonStyle">@style/CustomButtonStyle</item>
     </style>
-
-    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
-        <item name="android:background">#6200EE</item>
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:padding">10dp</item>
-    </style>
-
 </resources>
