@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:id="@+id/animatingView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_above="@+id/buttonTranslate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <Button
+        android:id="@+id/buttonTranslate"
+        android:layout_width="117dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/lato_black"
+        android:text="Translate"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonRotate"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/buttonTranslate"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/lato_black"
+        android:text="Rotate"
+        android:textSize="16sp" />
+
+
+
+    <Button
+        android:id="@+id/buttonScale"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/buttonRotate"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/lato_black"
+        android:text="Scale"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

@@ -65,9 +65,16 @@ public class MainActivity extends AppCompatActivity {
         if(id == R.id.linked){
             Toast.makeText(this, "Check linked devices", Toast.LENGTH_SHORT).show();
         }
+        if(id == R.id.starMsg){
+            Toast.makeText(this, "Check Starred messages", Toast.LENGTH_SHORT).show();
+        }
         if(id == R.id.settings){
             Toast.makeText(this, "Go to settings", Toast.LENGTH_SHORT).show();
         }
+        if(id == R.id.payments){
+            Toast.makeText(this, "Send Payments", Toast.LENGTH_SHORT).show();
+        }
+
         return true;
 
     }
